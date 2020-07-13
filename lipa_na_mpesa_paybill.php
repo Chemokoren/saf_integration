@@ -3,14 +3,14 @@
     
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url);
-    curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer QqGmYgOe8uCgdh2YNZYGFE9X4ci0')); //setting custom header
+    curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer QhfZax8q28hU4pQFcJbg2bGFMIFl')); //setting custom header
     
     $curl_post_data = array(
       //Fill in the request parameters with valid values
       'BusinessShortCode' => '174379',
       'Password' => 'MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjAwNzAyMTEwMDAw',
       'Timestamp' => '20200702110000',//yyyymmddhhiiss
-      'TransactionType' => 'CustomerBuyGoodsOnline',
+      'TransactionType' => 'CustomerPayBillOnline',
       'Amount' => '10',
       'PartyA' => '254708374149',
       'PartyB' => '174379',
@@ -30,9 +30,8 @@
     echo $curl_response;
     
 
+    //generate password
 
-    //code to generate password
-    
     // $pass_key = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919";
     // $timestamp = "20200702110000";
     // $shortcode = "174379";
